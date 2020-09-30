@@ -1,0 +1,7 @@
+classes are blueprints, that when created make objects known as instances
+classes are created with the new keyword
+the constructor gives default values to the instance
+the contrustor function is a special function that gets run when the class is instantiated
+instance methods can be added to classes like methods on an object
+class methods can be added with the static keyword
+this keyword inside of constructor or instance methods refers to object created from the class- the instance
