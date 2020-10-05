@@ -1,7 +1,7 @@
 // Given an array of one or more vanity codes and an array of phone numbers, write a function to find all phone numbers that match oone or more vanity codes. The output must be sorted array of unique phone number from the input array of numbers.
 // the funciton is expected to return a string_array
 // the function accepts following paramaters:
-// 1. string array codes
+// 1. string array codes 
 // 2. string array numbers
 // constraints:
 // the input numbers array may have repeat elements. 
@@ -16,7 +16,8 @@
 
 // sample
 // TWLO
-// codesHTCH
+// CODES
+// HTCH
 // +17474824380
 // +14157088956
 // +91981015555
@@ -32,6 +33,15 @@
 
 
 function vanity(codes, numbers){
+
+  //translate codes - string letters to numbers, back to string
+  //store in codesMap?
+  //store all numbers in numbersMap
+
+  //iterate through codesMap keys, compare each codesMap key with each numberMap key, use indexOf to check if codeMap key is in numberMap key
+  //if it is add it to a resultSet
+  //return keys of resultSet as an array, sorted
+  
 
 
 
