@@ -23,7 +23,7 @@ for(let i=0; i<str.length; i++){
     result.push([i,i+word.length-1])
   })
 }
-
+ 
 
 console.log(result)
 return result
