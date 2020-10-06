@@ -32,7 +32,7 @@
 // TWLO matches 1st, CODE matches 2nd, HTCH matches 3rd
 
 
-function vanity(codes, numbers){
+function vanityNumber(codes, numbers){
 
   //translate codes - string letters to numbers, back to string
   //store in codesMap?
@@ -42,10 +42,62 @@ function vanity(codes, numbers){
   //if it is add it to a resultSet
   //return keys of resultSet as an array, sorted
   
+  let codeObj={
+    A:2,
+    B:2,
+    C:2,
+    D:3,
+    E:3,
+    F:3,
+    G:4,
+    H:4,
+    I:4,
+    J:5,
+    K:5,
+    L:5,
+    M:6,
+    N:6,
+    O:6,
+    P:7,
+    Q:7,
+    R:7,
+    S:7,
+    T:8,
+    U:8,
+    V:8,
+    W:9,
+    X:9,
+    Y:9,
+    Z:9,
+  }
 
+  
+  let translatedCodeArr=[]  //strings of vanity numbers
+  for(let i=0;i<codes.length;i++){
+    let currentCode=codes[i]
+    let translatedCode_temp=''
+    for(let j=0; j<currentCode.length; j++){
+      let currentLetter=  currentCode[j]
+      translatedCode_temp += codeObj[currentLetter].toString()
+    }
+    translatedCodeArr.push(translatedCode_temp)
+  
+  }
+  let result=[]
+  for(let i=0; i<numbers.length; i++){
+    let currentNumber = numbers[i]
+    for(let j=0; j<translatedCodeArr.length; j++){
+      let currentCode=translatedCodeArr[j]
+      if(currentNumber.includes(currentCode) && !result.includes(currentNumber)){
+        result.push(currentNumber)
+      }
+    }
+  }
 
-
+console.log(result.sort())
+return result.sort()
 
 
 }
+vanityNumber(['TWLO','CODE','HTCH'], ['+17474824380', '+14157088956','+919810155555', '+15109926333','+1415123456'])
 

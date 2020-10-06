@@ -160,4 +160,18 @@ console.log(myList)
 
 
 
+reverse(){
+let current = this.head
+this.head= this.tail
+let prev=null
+let next
 
+for(let i=0; i<this.length; i++){
+next=currrent.next
+current.next=prev
+prev=current
+current=next
+}
+return this
+
+}
