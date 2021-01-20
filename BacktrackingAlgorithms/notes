@@ -1,0 +1,9 @@
+make choices- subproblem and decision space, if decision doesn't work undo and make another choice
+constraints
+goal - converge toward a base case
+
+you know you have a backtracking problem when the answer is easy to express recursivly
+"generate all"
+"compute all"
+- words the exhaust a decision space
+ 

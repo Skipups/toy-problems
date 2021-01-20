@@ -1,0 +1,19 @@
+catagory of trees
+compare and contrast min and max heap
+binary heaps- 
+-no relationship with L and R like in binary search tree. 
+-heaps are as compact as possible, all children of each node are full before moving down. 
+-at most 2 children. 
+
+maxBinaryHeap- 
+-all children are smaller than parent
+-no guarantees between children
+-left children filled out first 
+minBinaryHeap- all children are larger than parent
+
+Binary heaps useful for sorting, an dimplementing priority queues
+Binary heaps are either MaxBinaryHeaps or MinBinaryHeaps with parents either being smaller or larger than their children
+
+search o(n)
+insertion o(log n)
+deletion o(log n)

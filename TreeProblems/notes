@@ -1,0 +1,23 @@
+-Trees
+non-linear data structure
+contain root and child nodes
+-Binary Trees
+can have values of any type, but at most 2 children for each parent
+-Binary Search Trees
+every node to the left of a parent if less less than it's value and every node to the right is greater
+
+
+BFS DFS
+
+if tree that is very wide, time is the same, visitng each node
+BFS- stores node of everything that will be visited, so queue grows, space completxity large
+DFS- only keeps track of nodes in a given branch, so space complexity not large for wide tree
+
+single branch tree
+BFS- less memory
+DFS- takes a lot of memory because need to keep track each level
+
+
+DFS-InOrder //gives set of nodes in their order lowest to highest. don't know the root of the tree
+DFS-PreOrder //flattens tree, freeze it and saves order to reconstruct a tree. good for cloning and recreating a tree. know the root of the tree
+DFS-PostOrder //

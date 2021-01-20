@@ -175,3 +175,17 @@ current=next
 return this
 
 }
+
+reverse(){
+  let currrent=this.head
+  let prev=null
+  let temp
+
+  while(current !==null){
+    temp=current.next
+    current.next=prev
+    prev=current 
+    current=temp
+  }
+
+}
