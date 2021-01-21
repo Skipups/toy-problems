@@ -220,3 +220,4 @@ const reverseRecursive = (curr, prev = null) => {
 
   return reverseRecursive(next, curr);
 };
+//o(n) time, o(n)space
